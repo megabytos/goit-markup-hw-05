@@ -104,6 +104,7 @@ button {
 
 header {
   border-bottom: 1px solid var(--primary-accent-color);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 header .container {
   display: flex;
@@ -153,7 +154,7 @@ header nav {
   color: var(--active-color);
 }
 .header-nav-link.current {
-  color: var(--ocean);
+  color: var(--active-color);
 }
 .header-nav-link.current::after {
   display: block;
@@ -217,8 +218,8 @@ footer .logo {
 .social-media {
   margin-left: 120px;
 }
-.social-media h2,
-.subscribe h2 {
+.social-media p,
+.subscribe p {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -393,6 +394,9 @@ footer .logo {
   color: var(--primary-light-color);
   background-color: var(--link-color);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:active,
